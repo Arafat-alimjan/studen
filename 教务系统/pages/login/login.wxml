@@ -1,0 +1,37 @@
+<view class="page">
+    <!-- banner -->
+    <view class="logo_box">
+        <image class="school_logo_image" src="http://39.99.156.5/static/YJXT-image/logo-mini.png" />
+    </view>
+
+    <!-- content -->
+    <view class="group">
+        <text class="login_title">登录</text>
+
+        <!-- input1 -->
+        <view class="group_2">
+            <view class="flex-row group_4">
+                <image class="self-center image_4" src="https://wordpress.uygur.asia/id-card-h.png" />
+                <input type="number" maxlength="11" style="margin-left: 24rpx;width: 500rpx;" placeholder="请输入您的学号" placeholder-class="p_input_user_code" bindinput="bindInputUserCode" />
+            </view>
+            <view class="self-end section"></view>
+        </view>
+
+         <!-- input2 -->
+        <view class="group_2">
+            <view class="flex-row group_4">
+                <image class="self-center image_4" src="https://wordpress.uygur.asia/lock.png" />
+                <input type="text" style="margin-left: 24rpx;width: 500rpx;" placeholder="请输入您的密码"
+                 placeholder-class="p_input_user_code" bindinput="bindInputPassword"/>
+            </view>
+            <view class="self-end section"></view>
+        </view>
+
+        <!-- bottom -->
+        <view class="flex-col justify-start items-center button" bindtap="onLogin">
+            <text class="text_5">登录</text>
+        </view>
+
+
+    </view>
+</view>
